@@ -33,4 +33,16 @@ def getFlaggedCells(gameBoard):
         if cell.isFlagged():
             flaggedCells.append(cell)
     return flaggedCells
+#-----------------------------------------
+#Avoid missinformation.
+
+def copyChars(a1,a2):
+    for i in a1:
+        a2[i] = a1[i]
+    return a2
+
+def copyChars(source,destination):
+    for i in source:
+        destination[i] = source[i]
+    return destination
 
