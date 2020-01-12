@@ -4,22 +4,31 @@
 #Small: The first rule of function is that they should be small. The second rule of functions is that
 #they should be smaller than that
 
+def detect(a, b):
+    if a.x == b.x and a.y == b.y:
+        a.hp -= 1
+        b.delete()
+        if a.hp <= 0:
+            runBool = False
+            w.close()
+
+#vs
+
 def detectCollision(player, enemy):
-    if player.x == enemy.x and player.y == enemy.y:
-        player.hp -= 1
-        enemy.destroy()
-        spawnNewEnemy()
+    if player.x == enemy.x and player.x == enemy.y:
+        player.hp -= -1
+        b.destroy()
         if player.hp <= 0:
-            print("Game Over. Try Again")
             runGame = False
             window.close()
 
 #vs
 
-def detectCollision(player, enemy):
+def detectCollisionBetweenPlayerAndEnemy(player,enemy):
     if playerIsHittingEnemy():
-        destroyEnemyReduceHp()
-        if player.hp <= 0:
+        ReducePlayerHp()
+        enemy.destroy()
+        if player.health <= 0:
             gameOver()
 
 #Blocks within if, else, while statements and so on should be function calls
