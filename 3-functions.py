@@ -77,3 +77,16 @@ def checkPassword(username,password):
             return True
         else:
             return False
+
+#--------------------------------------------------------
+
+def displayGameOverMessage():
+    return "Game Over!"
+
+def displayWelcomeMessage():
+    return "Welcome!"
+
+#vs
+
+def display(message):
+    return message
