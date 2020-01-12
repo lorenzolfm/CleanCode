@@ -35,7 +35,7 @@ def drawObjects():
     drawPlayer()
     drawEnemies()
 
-def drawPlayer()
+def drawPlayer():
     x,y = getPlayerPosition
     draw(player,x,y)
 
