@@ -67,3 +67,13 @@ def write(something):
 
 def writeField(name)
 
+#--------------------------------------------------------
+
+def checkPassword(username,password):
+    user = User.findByName(username)
+    if user:
+        if user.password == password:
+            Session.initialize()
+            return True
+        else:
+            return False
