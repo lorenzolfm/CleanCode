@@ -17,7 +17,7 @@ def detect(a, b):
 def detectCollision(player, enemy):
     if player.x == enemy.x and player.x == enemy.y:
         player.hp -= -1
-        b.destroy()
+        enemy.destroy()
         if player.hp <= 0:
             runGame = False
             window.close()
