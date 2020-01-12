@@ -42,3 +42,19 @@ def drawPlayer():
 def drawEnemies():
     for enemy in enemies:
         drawEnemy()
+
+#--------------------------------------------------------
+
+def assertEquals(expected, actual):
+    if expected == actual: return True
+    else: return False
+
+#--------------------------------------------------------
+
+def makeCircle(x,y,radius):
+    pass
+
+#vs
+
+def makeCircle(center,radius):
+    pass
