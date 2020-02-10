@@ -109,12 +109,13 @@ def paychecksTotal(employees):
 
 def xProjection(a,b):
     if (a or b) == 0:
-        raise ValueError("a or b can't be zero")
+        raise ValueError("a ou b não pode ser zero")
     else:
         return (a - b)*1.5
 
 def xProjection(a,b):
-    assert a != 0, "a can't be zero"
-    assert b != 0, "b can't be zero"
+    assert a != 0, "a não pode ser zero"
+    assert b != 0, "b não pode ser zero"
     return (a - b)*1.5
+
 
